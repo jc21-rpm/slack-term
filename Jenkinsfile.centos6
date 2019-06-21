@@ -17,13 +17,15 @@ pipeline {
     stage('Build') {
       steps {
         ansiColor('xterm') {
-          sh './build 6'
+          sh './build 6 golang'
         }
       }
     }
     stage('Sign') {
       steps {
-        rpmSign()
+        ansiColor('xterm') {
+          rpmSign()
+        }
       }
     }
     stage('Publish') {
