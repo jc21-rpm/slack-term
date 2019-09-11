@@ -1,0 +1,7 @@
+{
+  "publish": {
+    "PACKAGE": "slack-term",
+    "GH_USER": "jc21-rpm",
+    "VERSION": "0.4.1"
+  }
+}
