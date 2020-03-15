@@ -1,7 +1,7 @@
 %define debug_package %{nil}
 
 %global gh_user     erroneousboat
-%global gh_commit   757850de7739f478e239f5b58c6c83d371658369
+%global gh_commit   2ee21247add4e50660e8b3b90b285814d21d8ad6
 %global gh_short    %(c=%{gh_commit}; echo ${c:0:7})
 
 # see https://fedoraproject.org/wiki/PackagingDrafts/Go#Build_ID
@@ -11,9 +11,9 @@
 %endif
 
 Name:           slack-term
-Version:        0.4.1
+Version:        0.5.0
 Release:        1%{?dist}
-Summary:        Slack client for your terminal 
+Summary:        Slack client for your terminal
 Group:          Applications/System
 License:        MIT
 URL:            https://github.com/%{gh_user}/%{name}
@@ -46,6 +46,9 @@ install -Dm0755 %{_builddir}/bin/%{name} %{buildroot}%{_bindir}/%{name}
 %doc %{name}-%{version}/LICENSE %{name}-%{version}/*.md
 
 %changelog
+* Mon Mar 16 2020 Jamie Curnow <jc@jc21.com> 0.5.0-1
+- v0.5.0
+
 * Fri Mar 22 2019 Jamie Curnow <jc@jc21.com> 0.4.1-1
 - v0.4.1
 
