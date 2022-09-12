@@ -12,7 +12,7 @@
 
 Name:           slack-term
 Version:        0.5.0
-Release:        1%{?dist}
+Release:        1
 Summary:        Slack client for your terminal
 Group:          Applications/System
 License:        MIT
